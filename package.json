@@ -1,8 +1,8 @@
 {
   "name": "braingamesdael",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Brain Games by Hexlet",
-  "main": "dist/index.js",
+  "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -14,7 +14,13 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "keywords": [
+    "game",
+    "console",
+    "brain",
+    "hexlet"
+  ],
+  "author": "Dael777",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
