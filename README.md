@@ -6,4 +6,10 @@
 
 [![Build Status](https://travis-ci.org/Dael777/project-lvl1-s376.svg?branch=master)](https://travis-ci.org/Dael777/project-lvl1-s376)
 
-[![asciicast](https://asciinema.org/a/qdbgKmbH1E92duxEoBUBfpQHP.svg)](https://asciinema.org/a/qdbgKmbH1E92duxEoBUBfpQHP)
+<h3>BrainEven Game run:</h3>
+
+[![asciicast](https://asciinema.org/a/bM55KvbIXjCr3h57trgf2rfA6.svg)](https://asciinema.org/a/bM55KvbIXjCr3h57trgf2rfA6)
+
+<h3>BrainCalc Game run:</h3>
+
+[![asciicast](https://asciinema.org/a/eJiubpUdD6q1xCGaulpO3UNDW.svg)](https://asciinema.org/a/eJiubpUdD6q1xCGaulpO3UNDW)
