@@ -1,4 +1,5 @@
 import { cons } from 'hexlet-pairs';
+import generateNumber from '../utils';
 import game from '..';
 
 const description = 'What is the result of the expression?';
@@ -6,7 +7,7 @@ const minNumber = 1;
 const maxNumber = 10;
 const operations = ['+', '-', '*'];
 
-const generateNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
 
 const quiz = () => {
@@ -15,13 +16,11 @@ const quiz = () => {
   const operation = randomOperation();
   const question = `${num1} ${operation} ${num2}`;
 
-  const splitted = question.split(' ');
   let result = 0;
-
-  switch (splitted[1]) {
-    case '+': result = +splitted[0] + +splitted[2]; break;
-    case '-': result = +splitted[0] - +splitted[2]; break;
-    case '*': result = +splitted[0] * +splitted[2]; break;
+  switch (operation) {
+    case '+': result = num1 + num2; break;
+    case '-': result = num1 - num2; break;
+    case '*': result = num1 * num2; break;
     default: break;
   }
 
@@ -29,6 +28,4 @@ const quiz = () => {
   return cons(question, correctAnswer);
 };
 
-const brainCalc = () => game(description, quiz);
-
-export default brainCalc;
+export default () => game(description, quiz);

@@ -5,7 +5,7 @@ const welcome = 'Welcome to the Brain Games!';
 const startCorrectAnswers = 0;
 const maxCorrectAnswers = 3;
 
-const round = (userName, quiz, correctAnswers) => {
+const startGame = (userName, quiz, correctAnswers) => {
   if (correctAnswers >= maxCorrectAnswers) {
     console.log(`Congratulations, ${userName}!`);
     return;
@@ -23,19 +23,17 @@ const round = (userName, quiz, correctAnswers) => {
   }
 
   console.log('Correct!');
-  round(userName, quiz, correctAnswers + 1);
+  startGame(userName, quiz, correctAnswers + 1);
 };
 
 const game = (description, quiz) => {
   console.log(welcome);
-  if (description) { console.log(description); }
+  console.log(description);
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  if (!quiz) { return; }
-
-  round(userName, quiz, startCorrectAnswers);
+  startGame(userName, quiz, startCorrectAnswers);
 };
 
 export default game;
