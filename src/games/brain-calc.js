@@ -7,7 +7,6 @@ const minNumber = 1;
 const maxNumber = 10;
 const operations = ['+', '-', '*'];
 
-
 const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
 
 const quiz = () => {
