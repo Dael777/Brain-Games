@@ -21,3 +21,7 @@
 <h2>BrainProgression Game run:</h2>
 
 [![asciicast](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91.svg)](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91)
+
+<h2>BrainPrime Game run:</h2>
+
+[![asciicast](https://asciinema.org/a/IlwRASin9uBds9RBbaMHUtbtB.svg)](https://asciinema.org/a/IlwRASin9uBds9RBbaMHUtbtB)
