@@ -23,7 +23,7 @@ const greatestDivisor = (num1, num2) => {
   return iter(greaterNumber, smallerNumber, maxPossibleDivisor);
 };
 
-const quiz = () => {
+const makeQuiz = () => {
   const num1 = generateNumber(minNumber, maxNumber);
   const num2 = generateNumber(minNumber, maxNumber);
 
@@ -33,4 +33,4 @@ const quiz = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => game(description, quiz);
+export default () => game(description, makeQuiz);

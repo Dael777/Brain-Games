@@ -9,7 +9,7 @@ const operations = ['+', '-', '*'];
 
 const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
 
-const quiz = () => {
+const makeQuiz = () => {
   const num1 = generateNumber(minNumber, maxNumber);
   const num2 = generateNumber(minNumber, maxNumber);
   const operation = randomOperation();
@@ -27,4 +27,4 @@ const quiz = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => game(description, quiz);
+export default () => game(description, makeQuiz);

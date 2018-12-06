@@ -5,35 +5,40 @@ const welcome = 'Welcome to the Brain Games!';
 const startCorrectAnswers = 0;
 const maxCorrectAnswers = 3;
 
-const startGame = (userName, quiz, correctAnswers) => {
-  if (correctAnswers >= maxCorrectAnswers) {
-    console.log(`Congratulations, ${userName}!`);
-    return;
-  }
+const startGame = (makeQuiz, correctAnswers) => {
+  if (correctAnswers >= maxCorrectAnswers) { return true; }
 
-  const generatedQuiz = quiz();
-  console.log(`Question: ${car(generatedQuiz)}`);
+  const quiz = makeQuiz();
+  const question = car(quiz);
+  const correctAnswer = cdr(quiz);
+
+  console.log(`Question: ${question}`);
 
   const answer = readlineSync.question('Your answer ');
 
-  if (cdr(generatedQuiz) !== answer) {
-    console.log(`${answer} is wrong answer ;(. Correct answer was ${cdr(generatedQuiz)}`);
-    console.log(`Lets try again, ${userName}!`);
-    return;
+  if (correctAnswer !== answer) {
+    console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
+    return false;
   }
 
   console.log('Correct!');
-  startGame(userName, quiz, correctAnswers + 1);
+  return startGame(makeQuiz, correctAnswers + 1);
 };
 
-const game = (description, quiz) => {
+const game = (description, makeQuiz) => {
   console.log(welcome);
   console.log(description);
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  startGame(userName, quiz, startCorrectAnswers);
+  const gameResult = startGame(makeQuiz, startCorrectAnswers);
+
+  if (gameResult) {
+    console.log(`Congratulations, ${userName}!`);
+  } else {
+    console.log(`Lets try again, ${userName}!`);
+  }
 };
 
 export default game;

@@ -8,10 +8,10 @@ const maxNumber = 1000;
 
 const isEven = number => (number % 2 === 0);
 
-const quiz = () => {
+const makeQuiz = () => {
   const question = generateNumber(minNumber, maxNumber);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
 
-export default () => game(description, quiz);
+export default () => game(description, makeQuiz);
