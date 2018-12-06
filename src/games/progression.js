@@ -7,22 +7,21 @@ const minNumber = 1;
 const maxNumber = 10;
 const maxProgressionLength = 10;
 
-const makeProgression = () => {
-  const firstNumber = generateNumber(minNumber, maxNumber);
-  const progressionStep = generateNumber(minNumber, maxNumber);
-  const progression = [firstNumber];
+const makeProgression = (firstNumber, progressionStep) => {
+  const progression = [];
 
-  let i = 1;
-  while (i < maxProgressionLength) {
+  for (let i = 0; i < maxProgressionLength; i += 1) {
     progression.push(firstNumber + progressionStep * i);
-    i += 1;
   }
 
   return progression;
 };
 
 const quiz = () => {
-  const question = makeProgression();
+  const firstNumber = generateNumber(minNumber, maxNumber);
+  const progressionStep = generateNumber(minNumber, maxNumber);
+
+  const question = makeProgression(firstNumber, progressionStep);
   const correctAnswer = randomArrayValue(question);
 
   const hiddenValueIndex = question.indexOf(correctAnswer);
