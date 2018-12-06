@@ -17,3 +17,7 @@
 <h2>BrainGcd Game run:</h2>
 
 [![asciicast](https://asciinema.org/a/ph8XSuzMrhBZU7mqN71836Fjg.svg)](https://asciinema.org/a/ph8XSuzMrhBZU7mqN71836Fjg)
+
+<h2>BrainProgression Game run:</h2>
+
+[![asciicast](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91.svg)](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91)

@@ -1,1 +1,4 @@
-export default (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const generateNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const randomArrayValue = arr => arr[Math.floor(Math.random() * arr.length)];
+
+export { generateNumber, randomArrayValue };

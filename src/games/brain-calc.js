@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import generateNumber from '../utils';
+import { generateNumber, randomArrayValue } from '../utils';
 import game from '..';
 
 const description = 'What is the result of the expression?';
@@ -7,12 +7,10 @@ const minNumber = 1;
 const maxNumber = 10;
 const operations = ['+', '-', '*'];
 
-const randomOperation = () => operations[Math.floor(Math.random() * operations.length)];
-
 const makeQuiz = () => {
   const num1 = generateNumber(minNumber, maxNumber);
   const num2 = generateNumber(minNumber, maxNumber);
-  const operation = randomOperation();
+  const operation = randomArrayValue(operations);
   const question = `${num1} ${operation} ${num2}`;
 
   let result = 0;

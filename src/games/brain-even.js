@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import generateNumber from '../utils';
+import { generateNumber } from '../utils';
 import game from '..';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
