@@ -23,7 +23,7 @@ const isPrime = (number) => {
 
 const makeQuiz = () => {
   const question = generateNumber(minNumber, maxNumber);
-  const correctAnswer = isPrime(0) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return cons(question, correctAnswer);
 };
