@@ -20,8 +20,8 @@ const makeQuiz = () => {
     case '*': result = num1 * num2; break;
     default: break;
   }
-
   const correctAnswer = String(result);
+
   return cons(question, correctAnswer);
 };
 

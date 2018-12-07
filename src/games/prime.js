@@ -8,10 +8,11 @@ const maxNumber = 1000;
 
 const isPrime = (number) => {
   const minPossibleDivisor = 2;
+  if (number === minPossibleDivisor) return true;
 
   const iter = (num, divisor) => {
+    if (num < minPossibleDivisor || num % divisor === 0) return false;
     if (divisor >= num / 2) return true;
-    if (num % divisor === 0) return false;
 
     return iter(num, divisor + 1);
   };

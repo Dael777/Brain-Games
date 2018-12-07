@@ -11,6 +11,7 @@ const isEven = number => (number % 2 === 0);
 const makeQuiz = () => {
   const question = generateNumber(minNumber, maxNumber);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
+
   return cons(question, correctAnswer);
 };
 
