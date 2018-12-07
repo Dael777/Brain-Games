@@ -11,14 +11,14 @@ const isPrime = (number) => {
   if (number < minPossibleDivisor) return false;
   if (number === minPossibleDivisor) return true;
 
-  const iter = (num, divisor) => {
-    if (num % divisor === 0) return false;
-    if (divisor >= num / 2) return true;
+  const iter = (divisor) => {
+    if (divisor >= number / 2) return true;
+    if (number % divisor === 0) return false;
 
-    return iter(num, divisor + 1);
+    return iter(divisor + 1);
   };
 
-  return iter(number, minPossibleDivisor);
+  return iter(minPossibleDivisor);
 };
 
 const makeQuiz = () => {
