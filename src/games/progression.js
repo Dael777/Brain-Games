@@ -5,12 +5,11 @@ import game from '..';
 const description = 'What number is missing in the progression?';
 const minNumber = 1;
 const maxNumber = 10;
-const maxProgressionLength = 10;
 
-const makeProgression = (firstNumber, progressionStep) => {
+const makeProgression = (firstNumber, progressionStep, progressionLength) => {
   const progression = [];
 
-  for (let i = 0; i < maxProgressionLength; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progression.push(firstNumber + progressionStep * i);
   }
 
@@ -20,8 +19,9 @@ const makeProgression = (firstNumber, progressionStep) => {
 const quiz = () => {
   const firstNumber = generateNumber(minNumber, maxNumber);
   const progressionStep = generateNumber(minNumber, maxNumber);
+  const progressionLength = 10;
 
-  const question = makeProgression(firstNumber, progressionStep);
+  const question = makeProgression(firstNumber, progressionStep, progressionLength);
   const correctAnswer = randomArrayValue(question);
 
   const hiddenValueIndex = question.indexOf(correctAnswer);
