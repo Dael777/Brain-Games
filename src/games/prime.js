@@ -8,10 +8,11 @@ const maxNumber = 1000;
 
 const isPrime = (number) => {
   const minPossibleDivisor = 2;
+  if (number < minPossibleDivisor) return false;
   if (number === minPossibleDivisor) return true;
 
   const iter = (num, divisor) => {
-    if (num < minPossibleDivisor || num % divisor === 0) return false;
+    if (num % divisor === 0) return false;
     if (divisor >= num / 2) return true;
 
     return iter(num, divisor + 1);
@@ -22,7 +23,7 @@ const isPrime = (number) => {
 
 const makeQuiz = () => {
   const question = generateNumber(minNumber, maxNumber);
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(0) ? 'yes' : 'no';
 
   return cons(question, correctAnswer);
 };
