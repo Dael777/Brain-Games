@@ -7,18 +7,18 @@ const minNumber = 1;
 const maxNumber = 1000;
 
 const isPrime = (number) => {
-  const minPossibleDivisor = 2;
-  if (number < minPossibleDivisor) return false;
-  if (number === minPossibleDivisor) return true;
+  const minPossibleDivisor = 1;
+  if (number <= minPossibleDivisor) return false;
+  const maxPossibleDivisor = Math.ceil(number / 2);
 
   const iter = (divisor) => {
-    if (divisor >= number / 2) return true;
+    if (divisor === minPossibleDivisor) return true;
     if (number % divisor === 0) return false;
 
-    return iter(divisor + 1);
+    return iter(divisor - 1);
   };
 
-  return iter(minPossibleDivisor);
+  return iter(maxPossibleDivisor);
 };
 
 const makeQuiz = () => {
