@@ -12,16 +12,16 @@
 
 <h2>BrainCalc Game run:</h2>
 
-[![asciicast](https://asciinema.org/a/eJiubpUdD6q1xCGaulpO3UNDW.svg)](https://asciinema.org/a/eJiubpUdD6q1xCGaulpO3UNDW)
+[![asciicast](https://asciinema.org/a/yNz1QxhI72gDz2uBoIeleWYR7.svg)](https://asciinema.org/a/yNz1QxhI72gDz2uBoIeleWYR7)
 
 <h2>BrainGcd Game run:</h2>
 
-[![asciicast](https://asciinema.org/a/ph8XSuzMrhBZU7mqN71836Fjg.svg)](https://asciinema.org/a/ph8XSuzMrhBZU7mqN71836Fjg)
+[![asciicast](https://asciinema.org/a/kCFUWCCvM9TbdXOmylACeln96.svg)](https://asciinema.org/a/kCFUWCCvM9TbdXOmylACeln96)
 
 <h2>BrainProgression Game run:</h2>
 
-[![asciicast](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91.svg)](https://asciinema.org/a/gEAH3Dl5GHZiqLtjSBsnpTs91)
+[![asciicast](https://asciinema.org/a/vJ5RzvwPWABBPR0bS8jv1btwf.svg)](https://asciinema.org/a/vJ5RzvwPWABBPR0bS8jv1btwf)
 
 <h2>BrainPrime Game run:</h2>
 
-[![asciicast](https://asciinema.org/a/IlwRASin9uBds9RBbaMHUtbtB.svg)](https://asciinema.org/a/IlwRASin9uBds9RBbaMHUtbtB)
+[![asciicast](https://asciinema.org/a/N0NIqH5k1hB1X9ItYBVlvn6lr.svg)](https://asciinema.org/a/N0NIqH5k1hB1X9ItYBVlvn6lr)
