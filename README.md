@@ -1,6 +1,7 @@
 # project-lvl1-s376
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/118a21033ad36f54b8f3/maintainability)](https://codeclimate.com/github/Dael777/Brain-Games/maintainability)[![Build Status](https://travis-ci.org/Dael777/Brain-Games.svg?branch=master)](https://travis-ci.org/Dael777/Brain-Games)
+[![Maintainability](https://api.codeclimate.com/v1/badges/118a21033ad36f54b8f3/maintainability)](https://codeclimate.com/github/Dael777/Brain-Games/maintainability)
+[![Build Status](https://travis-ci.org/Dael777/Brain-Games.svg?branch=master)](https://travis-ci.org/Dael777/Brain-Games)
 
 <h2>BrainEven Game run:</h2>
 
