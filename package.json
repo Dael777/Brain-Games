@@ -1,6 +1,6 @@
 {
   "name": "braingamesdael",
-  "version": "5.0.4",
+  "version": "5.0.6",
   "description": "Brain Games by Hexlet",
   "main": "",
   "bin": {
@@ -28,17 +28,17 @@
   "author": "Dael777",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
   },
   "dependencies": {
     "hexlet-pairs": "^1.0.8",
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.10"
   }
 }

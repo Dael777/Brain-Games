@@ -8,7 +8,7 @@
 
 <h2>BrainEven Game run:</h2>
 
-[![asciicast](https://asciinema.org/a/bM55KvbIXjCr3h57trgf2rfA6.svg)](https://asciinema.org/a/bM55KvbIXjCr3h57trgf2rfA6)
+[![asciicast](https://asciinema.org/a/I7ZI27QPywAcO8mQs961JlivS.svg)](https://asciinema.org/a/I7ZI27QPywAcO8mQs961JlivS)
 
 <h2>BrainCalc Game run:</h2>
 
