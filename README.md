@@ -5,7 +5,12 @@
 [![Build Status](https://travis-ci.org/Dael777/Brain-Games.svg?branch=master)](https://travis-ci.org/Dael777/Brain-Games)
 
 <h2>Используемые технологии</h2>
-Javascript (ES6), EsLint, Babel, readline-sync
+<ul>
+  <li>Javascript (ES6)</li>
+  <li>EsLint</li>
+  <li>Babel</li>
+  <li>readline-sync</li>
+</ul> 
 
 <h2>BrainEven Game run:</h2>
 
